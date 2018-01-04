@@ -335,13 +335,13 @@ Enemy.prototype.location = function() {
 };
 
 Enemy.prototype.move = function(dt) {
-    // var sk = 1;
+    var sk = 1;
     if (this.direction === "left") {
-        this.x -= dt * this.rate;
-        // this.x -= sk;
+//         this.x -= dt * this.rate;
+        this.x -= sk;
     } else if (this.direction === "right") {
-        this.x += dt * this.rate;
-        // this.x += sk;
+//         this.x += dt * this.rate;
+        this.x += sk;
     }
 };
 
