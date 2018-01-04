@@ -1,0 +1,172 @@
+html, body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 98%;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+}
+
+ul {
+    font-family: 'Istok Web' sans-serif;
+    font-style: italic;
+    font-size: 0.6em;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+li {
+    padding-top: 10px;
+}
+
+h1 {
+    font-family: 'Sigmar One', cursive;
+    font-size: 2em;
+    color: #6495ED;
+}
+
+h2 {
+    font-family: 'Istok Web', sans-serif;
+    font-style: italic;
+    font-size: 1em;
+    color: #C0C0C0;
+}
+
+.pic {
+    width: 50px;
+    margin: 0 20px;
+}
+
+canvas {
+    max-width: 550px;
+}
+
+/*Content*/
+
+.main {
+    position: relative;
+    margin: 0 auto;
+    height: auto !important;
+    height: 100%;
+    max-width: 960px;
+    min-height: 100%;
+}
+
+.menuitem a, .menuitem a: visited {
+    text_direction: none;
+    color: chocolate;
+    clear: both;
+}
+
+.menuitem a: hover {
+    color: #6495ED;
+}
+
+.menuitem {
+    width: 100%;
+    clear: both;
+}
+
+.menu {
+    margin-top: 10%;
+    font-size: 2em;
+    padding-bottom: 10%;
+    font-family: 'Sigmar One', cursive;
+}
+
+#show, #instrucList {
+    display: none;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 20%;
+    font-family: 'Istok Web', sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    background: #6495ED;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 60px;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.btn: hover {
+    text-decoration: none;
+}
+
+.inline1 {
+    width: 100%;
+    float: none;
+    transition: 0.5s ease-in-out;
+}
+
+.inline2 {
+    width: 40%;
+    float: right;
+    display: none;
+    margin-top: 20%;
+}
+
+/*Footer*/
+
+footer {
+    font-size: 0.78em;
+    text-align: center;
+    clear: both;
+    color: #CCCCCC;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-icon {
+    transition: 0.5s ease-in-out;
+    width: 40px;
+    margin: 0 10px;
+}
+
+.social-icon: hover {
+    -webkit-transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+}
+
+/*responsive css*/
+@media only screen and (max-width: 1000px) {
+        canvas {
+            max-width: 450px;
+        }
+        .main {
+            max-width: 760px;
+        }
+        .btn {
+            width: 45px;
+            font-size: 15px;
+        }
+
+    }
+
+@media only screen and (max-width: 735px) {
+        canvas {
+            max-width: 350px;
+        }
+        .main {
+            max-width: 660px;
+        }
+        .btn {
+            width: 35px;
+            font-size: 12px;
+        }
+        .menuitem {
+            padding-bottom: 10px;
+        }
+
+    }
